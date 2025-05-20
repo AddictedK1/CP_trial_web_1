@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CP Club - Login/Signup</title>
+    <link rel="stylesheet" href="css/login-signup-style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">CP Club</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="problems.html">Problems</a></li>
+                <li><a href="events.php">Events</a></li>
+                <li><a href="playground.html">Playground</a></li>
+                <li><a href="login-signup.html" class="active">Login/Signup</a></li>
+            </ul>
+            <button id="theme-toggle">Toggle Theme</button>
+        </nav>
+    </header>
+    <main>
+        <section class="auth-container">
+            <h1>Login or Signup</h1>
+            <div class="tabs">
+                <button class="tab active" data-tab="login">Login</button>
+                <button class="tab" data-tab="signup">Signup</button>
+            </div>
+            <div id="login-form" class="form-content active">
+                <form id="login" action="php/login-signup.php" method="POST">
+                    <div class="form-group">
+                        <label for="login-email">Email</label>
+                        <input type="email" id="login-email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="login-password">Password</label>
+                        <input type="password" id="login-password" name="password" required>
+                    </div>
+                    <button type="submit" class="btn" name="login">Login</button>
+                    <p id="login-error" class="error"></p>
+                </form>
+            </div>
+            <div id="signup-form" class="form-content">
+                <form id="signup" action="php/login-signup.php" method="POST">
+                    <div class="form-group">
+                        <label for="signup-username">Username</label>
+                        <input type="text" id="signup-username" name="username" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="signup-email">Email</label>
+                        <input type="email" id="signup-email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="signup-password">Password</label>
+                        <input type="password" id="signup-password" name="password" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="signup-confirm-password">Confirm Password</label>
+                        <input type="password" id="signup-confirm-password" name="confirm-password" required>
+                    </div>
+                    <button type="submit" class="btn" name="signup">Signup</button>
+                    <p id="signup-error" class="error"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2025 CP Club. All rights reserved.</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CP Club - Playground</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.7/codemirror.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">CP Club</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="problems.html">Problems</a></li>
+                <li><a href="events.php">Events</a></li>
+                <li><a href="playground.html" class="active">Playground</a></li>
+            </ul>
+            <button id="theme-toggle">Toggle Theme</button>
+        </nav>
+    </header>
+    <main>
+        <section class="playground">
+            <h1>Code Playground</h1>
+            <div class="editor-container">
+                <textarea id="code-editor">console.log("Hello, CP Club!");</textarea>
+                <div class="buttons">
+                    <button id="run-code">Run Code</button>
+                    <button id="submit-code">Submit Code</button>
+                </div>
+                <div id="output">Output will appear here...</div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 CP Club. All rights reserved.</p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.7/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.7/mode/javascript/javascript.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
